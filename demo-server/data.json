@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "sumit",
+      "mobile": "54675895",
+      "emailId": "sumit123@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "bag",
+      "mobile": "54675896",
+      "emailId": "bag123@gmail.com"
+    }
+  ]
+}

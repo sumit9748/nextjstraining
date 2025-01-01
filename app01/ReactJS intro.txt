@@ -1,0 +1,50 @@
+class Component
+    From React.component class,'state','setState()',render()','componentDidMount()','componentDidUpdate()'
+    and a few more life cycle methods are inherited ny a class component
+    state   is the field of a class component that holds all the data to be managed by that component.
+            state is continously mointored and as and when the state is modified, the 'render()' method is invoked.
+            state is immutable,state is only replacable using 'setState()' method.
+    
+    render() is the method that returns the dom to be displayed by this component.
+             we develope override the 'render()' method to decide on the DOM.
+    
+    setState() can take a full or partial state and replace the existing state.
+
+Functional Component Vs class component 
+    function component has no 'state' or any other life cycle methods as compared to the class component and hence,
+    function components are also called state-less component.
+ 'props' is short for properties.'props' carry data from a parent component to a child component.
+ props can be passed as attributes on to the child component tag from parent component.
+
+ Lify cycle Methods of a component
+ constructor()
+    |
+    render()
+        |
+        componentDidMount()//is used to execute any task after the first rendering
+            /******************************/
+            setState() has to get involved
+            either in the componentDidMount()
+            or due to any event handler
+            /******************************/
+            |
+            render()
+                |
+                componentDidUpdate()//is used to execute any task after every rendering..!
+            
+
+UseState will add state feature to a function componentuseState will add state feature to a function component
+    let[getter,setter]=useState(initialValue);
+    let[x,setX]=useState(0);
+    use 'x' to read the initialValue
+    use 'setx' to change the value
+
+UseEffect will add life cycle feature to the function component
+    useEffect(callBack)
+        the callBack is executed after every rendering
+    useEffect(callBack,[])
+        the array here indicates dependencies.
+        and here dependencies are empty.
+        the callback is executed only one after first rendering..
+    useEffec(callBack ,[first1,first2])
+        
