@@ -1,0 +1,55 @@
+NextJS
+is a UI framework based on ReactJs
+Features
+    Routing  is used for navigating from one component to another
+             file system based routingh is provided on top of server components. These
+             router support layouts,error rendering,state rendering..etc like features.
+    rendering Server components and client component
+                Server components will render on the server side and the cached html content
+                is passed to the client
+                Whers as, client components can be re-rendered on the client as well.
+
+                Server components are employedwhen api-calls or authentication or any other operation
+                that involve data privacy or secracy has to be concerned.
+
+                client components are engaged where a user- interaction, liye cycle
+                methods of component and event handling for a responsive application are needed
+
+    DataFetching:
+        supports async/await server component and flexible fetch api to talk to rest-api
+        and talk to rest-api and perform data operations.
+
+    styling:-
+        supportsa variety of styling options that include CSS,Tailwind CSS
+    optimisation
+        All static resources link images,fonts,and non static resources like scripts are optimized t
+        toimproved the rendering time and performence.
+    Typescript
+        supports typescript for a type safe application building.
+NextJS Routing
+    we have two routers to handle routiong in NextJS
+    Both routers depend on file system based routing that means based on the physical
+    path of the computer,the routing path isassumed
+    Approuting:-
+        engages for client side routing
+        the 'app' folder is the root folder that is expected to contain folders and components
+        and each folder inside the 'app' maps to one path smae as the folder className
+
+        Assuming the server is running on location:8888
+
+        'app'       http://localhost:8888/
+        'app/emps'  http://localhost:8888/emps
+        'app/dept'  http://localhost:8888/dept
+        'app/emp/dashboard'     http://localhost:8888/emp/dashboard
+
+
+        Each folder including 'app' can have
+            layout.css      as the layout of that component
+            error.tsx       to serve as the error conmtent of the component
+            page.tsx        to serve the content of the component
+
+    PageRoting engages for server side routing
+            the 'pages' folder is the root folder for server side routing.
+            each file of the pages is mapped to a url
+            pages/emps.tsx      http://localhost:8888/emps
+            pages.api/emps.ts   http://localhost:8888/api/emps
