@@ -1,0 +1,38 @@
+[
+    {
+        "empId":1,
+    "fullName":"Vamsy krishna",
+    "dateOfJoining":"2024-01-01",
+    "salary":50000,
+    "mobile":"454678377",
+    "mailId":"vamsy123@gmail.com",
+    "deptId":4
+    },
+    {
+        "empId":2,
+    "fullName":"sumit mondal",
+    "dateOfJoining":"2024-02-01",
+    "salary":30000,
+    "mobile":"454678377",
+    "mailId":"sumit123@gmail.com",
+    "deptId":3
+    },
+    {
+        "empId":3,
+    "fullName":"bag kanai",
+    "dateOfJoining":"2025-01-01",
+    "salary":40000,
+    "mobile":"454678378",
+    "mailId":"bag123@gmail.com",
+    "deptId":2
+    },
+    {
+        "empId":4,
+    "fullName":"langta das",
+    "dateOfJoining":"2024-08-01",
+    "salary":20000,
+    "mobile":"454676777",
+    "mailId":"langta123@gmail.com",
+    "deptId":3
+    }
+]

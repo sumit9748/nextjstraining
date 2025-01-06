@@ -1,0 +1,18 @@
+[
+    {
+        "deptId":1,
+        "name" :"Accounts"
+    },
+    {
+        "deptId":2,
+        "name" :"JAVA FSD"
+    },
+    {
+        "deptId":3,
+        "name" :"DOTNET FSD"
+    },
+    {
+        "deptId":4,
+        "name" :"HR"
+    }
+]
