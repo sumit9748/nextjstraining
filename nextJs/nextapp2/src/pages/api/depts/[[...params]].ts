@@ -1,5 +1,5 @@
 import DeptDataService from "@/lib/DeptDataService";
-import DeptDataService from "@/lib/DeptDataService";
+
 import { NextApiRequest,NextApiResponse } from "../../../../node_modules/next/types";
 
 const deptDataService:DeptDataService=new DeptDataService("../data/depts.json");
@@ -24,10 +24,12 @@ const handler=async(req:NextApiRequest,res:NextApiResponse)=>{
             let dept={...req.body};
             dept=await deptDataService.add(dept);
             res.status(201).json(dept);
+
         }else if(req.method==='PUT'){
             let dept={...req.body};
             dept=await deptDataService.replace(dept);
             res.status(202).json(dept);
+
         }else if(req.method==='DELETE'){
             if(params && params!.length>0){
                 let id=params![0];
@@ -39,6 +41,7 @@ const handler=async(req:NextApiRequest,res:NextApiResponse)=>{
         }else{
             res.status(400).json({'error':'the sent method is not supported'});
         }
+        
     }catch(err){
     console.log(err);
     res.status(500).json({'error':'something went wrong'})
